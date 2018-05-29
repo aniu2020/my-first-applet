@@ -10,4 +10,10 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+
+  <!--JS 交互逻辑-->
+  <view>JS交互逻辑:</view>
+  <view>{{ msg }}</view>
+  <button bindtap="clickMe">点击我</button>
+
 </view>
