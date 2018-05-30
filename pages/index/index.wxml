@@ -15,5 +15,5 @@
   <view>JS交互逻辑:</view>
   <view>{{ msg }}</view>
   <button bindtap="clickMe">点击我</button>
-
+  <view>1{{globalData}}</view>
 </view>

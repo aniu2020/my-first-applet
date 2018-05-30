@@ -1,0 +1,2 @@
+<view bindtap="viewTap"> click me </view>
+<view>{{msg}}</view>
