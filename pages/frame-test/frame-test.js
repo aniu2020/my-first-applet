@@ -23,6 +23,7 @@ Page({
         // console.log('common',common.default.sayGoodbye)
         //import方式 有default无需加default
         console.log('common',common)
+        console.log('this.data.msg',this.data.msg)
     },
 
     /**
@@ -98,8 +99,10 @@ Page({
         console.log('view tap')
         console.log('Page.prototype.route',Page.prototype.route,this.route)
         // this.data.msg='我改变了frame-test页面msg的值' //直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的
-        this.setData({'msg':'我改变了frame-test页面msg的值'},()=>{
+        this.setData({'msg':'我改变了frame-test页面msg的值'},(e)=>{
             console.log('setDataCallBack')
+          
+        
         })
     }
 })
