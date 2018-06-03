@@ -16,14 +16,16 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log('getApp1',getApp1,getApp1.testglobalData)
+        console.log('onLoad-options:',options)
+        console.log('getApp1:',getApp1,getApp1.testglobalData)
         // console.log('getApp',getApp())
 
         //require方式 有default要加default
         // console.log('common',common.default.sayGoodbye)
         //import方式 有default无需加default
-        console.log('common',common)
-        console.log('this.data.msg',this.data.msg)
+        console.log('common:',common)
+        console.log('this.data.msg:',this.data.msg)
+        
     },
 
     /**
@@ -31,9 +33,9 @@ Page({
      */
     onReady: function () {
         //字段可以获取到当前页面的路径
-        console.log('Page.prototype.route',this.route)
+        console.log('Page.prototype.route:',this.route)
         // 函数用于获取当前页面栈的实例 Page的实例
-        console.log('getCurrentPages()',getCurrentPages())
+        console.log('getCurrentPages():',getCurrentPages())
 
     },
 
@@ -61,7 +63,7 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh: function (res) {
-        console.log('onPullDownRefresh', res)
+        console.log('onPullDownRefresh:', res)
     },
 
     /**
@@ -104,5 +106,8 @@ Page({
           
         
         })
+    },
+    tapName(e1){
+        console.log('tapName-event:',e1)
     }
 })

@@ -1,1 +1,16 @@
-/* pages/frame-test/frame-test.wxss */
+.test-wxss {
+  /*如果是750的尺寸 直接取尺寸 375的就是x2*/
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #c00;
+  /* .test-inner{
+         !*border: 1px solid #000;*!
+         color: #000000;
+     }*/
+}
+
+.test-wxss .test-inner {
+  border: 1px solid #000;
+  width: 50rpx;
+  height: 50rpx;
+}

@@ -1,2 +1,13 @@
 <view bindtap="viewTap"> click me </view>
 <view>{{msg}}</view>
+<view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
+<view class="test-wxss">test-wxss
+    <view class="test-inner">test-inner</view>
+</view>
+
+<view>
+    <!-- 以下是对一个自定义组件的引用 -->
+    <test-component inner-text="我是test-component">
+        我是test-component-inner
+    </test-component>
+</view>

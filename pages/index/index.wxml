@@ -16,4 +16,5 @@
   <view>{{ msg }}</view>
   <button bindtap="clickMe">点击我</button>
   <view>1{{globalData}}</view>
+  <navigator url="/pages/frame-test/frame-test?tit=123"  open-type="switchTab">跳转到frame-test</navigator>
 </view>
