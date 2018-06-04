@@ -25,7 +25,25 @@ Page({
         //import方式 有default无需加default
         console.log('common:',common)
         console.log('this.data.msg:',this.data.msg)
-        
+
+
+        //微信小程序 页面跳转 传递参数
+        // wxml:
+        // <navigator url="../navigator/navigator?title=我是navigate" >跳转到新页面</navigator>
+        //  <navigator url="../redirect/redirect?title=我是redirect"  open-type="redirect">在当前页打开</navigator>
+
+        // <view class="btn-area">
+        //     <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+        //     <navigator url="../../redirect/redirect/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+        //     <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+        // <navigator target="miniProgram" open-type="navigate" app-id="" path="" extra-data="" version="release">打开绑定的小程序</navigator>
+        //     </view>
+        // 被跳转的页面
+        // 在onLoad回调里面
+        // this.setData({
+        //     title: options.title
+        // })
+
     },
 
     /**
@@ -103,8 +121,7 @@ Page({
         // this.data.msg='我改变了frame-test页面msg的值' //直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的
         this.setData({'msg':'我改变了frame-test页面msg的值'},(e)=>{
             console.log('setDataCallBack')
-          
-        
+
         })
     },
     tapName(e1){
