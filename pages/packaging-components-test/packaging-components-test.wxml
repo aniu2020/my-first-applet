@@ -1,0 +1,22 @@
+<view class="packaging-components-test">
+    <view class="test-item">
+        <text>view：</text>
+        <view class="flex-item bc_green">1</view>
+        <view class="flex-item bc_red">2</view>
+        <view class="flex-item bc_blue">3</view>
+    </view>
+
+    <view class="test-item">
+        <text>scroll-view：</text>
+        <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower"
+                     bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+            <!--scroll-into-view ：值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素-->
+            <view id="green" class="scroll-view-item bc_green"></view>
+            <view id="red" class="scroll-view-item bc_red"></view>
+            <view id="yellow" class="scroll-view-item bc_yellow"></view>
+            <view id="blue" class="scroll-view-item bc_blue"></view>
+        </scroll-view>
+    </view>
+
+</view>
+

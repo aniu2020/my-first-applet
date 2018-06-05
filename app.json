@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/frame-test/frame-test"
+    "pages/frame-test/frame-test",
+    "pages/packaging-components-test/packaging-components-test"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -27,6 +28,10 @@
       {
         "pagePath": "pages/frame-test/frame-test",
         "text": "框架测试"
+      },
+      {
+        "pagePath": "pages/packaging-components-test/packaging-components-test",
+        "text": "组件测试"
       }
     ]
   }

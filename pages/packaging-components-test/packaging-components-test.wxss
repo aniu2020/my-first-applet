@@ -1,0 +1,9 @@
+.packaging-components-test{
+}
+.test-item{
+    margin-bottom: 20rpx;
+}
+.flex-wrp {display: flex;flex-direction:row;}
+.bc_green {background: green;width:100px; height: 100px;}
+.bc_red {background: red;width:100px; height: 100px;}
+.bc_blue {background: blue;width:100px; height: 100px;}
